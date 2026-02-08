@@ -1,0 +1,1512 @@
+{
+  "graphs": {
+    "proj-7": {
+      "nodes": [
+        {
+          "type": "decision",
+          "decision_id": "dec-7",
+          "title": "Queue strategy",
+          "created_at": "2026-02-08T02:14:53.729937+00:00",
+          "project_id": "proj-7",
+          "id": "decision:dec-7"
+        },
+        {
+          "type": "decision_version",
+          "version_id": "v1",
+          "decision_id": "dec-7",
+          "content": "Use Redis queue.",
+          "created_at": "2026-02-08T02:14:53.729973+00:00",
+          "confidence": 0.8,
+          "reasoning": "Decision update",
+          "project_id": "proj-7",
+          "id": "decision_version:v1"
+        },
+        {
+          "type": "stakeholder",
+          "stakeholder_id": "s-1",
+          "name": "Alice",
+          "department": "Product",
+          "role": "Owner",
+          "scoped_projects": [
+            "proj-7"
+          ],
+          "id": "stakeholder:s-1"
+        },
+        {
+          "type": "decision_version",
+          "version_id": "v2",
+          "decision_id": "dec-7",
+          "content": "Use managed Kafka.",
+          "created_at": "2026-02-08T02:14:53.734875+00:00",
+          "confidence": 0.8,
+          "reasoning": "Decision update",
+          "project_id": "proj-7",
+          "id": "decision_version:v2"
+        },
+        {
+          "type": "stakeholder",
+          "stakeholder_id": "s-2",
+          "name": "Bob",
+          "department": "Engineering",
+          "role": "Contributor",
+          "scoped_projects": [
+            "proj-7"
+          ],
+          "id": "stakeholder:s-2"
+        }
+      ],
+      "links": [],
+      "edges": []
+    },
+    "proj-1": {
+      "nodes": [
+        {
+          "type": "stakeholder",
+          "stakeholder_id": "s-1",
+          "name": "Maya Chen",
+          "department": "product",
+          "role": "Owner",
+          "scoped_projects": [
+            "proj-1"
+          ],
+          "id": "stakeholder:s-1"
+        },
+        {
+          "type": "stakeholder",
+          "stakeholder_id": "s-2",
+          "name": "Jordan Lee",
+          "department": "engineering",
+          "role": "Contributor",
+          "scoped_projects": [
+            "proj-1"
+          ],
+          "id": "stakeholder:s-2"
+        },
+        {
+          "type": "stakeholder",
+          "stakeholder_id": "s-3",
+          "name": "Alex Rivera",
+          "department": "infrastructure",
+          "role": "Affected",
+          "scoped_projects": [
+            "proj-1"
+          ],
+          "id": "stakeholder:s-3"
+        },
+        {
+          "type": "stakeholder",
+          "stakeholder_id": "s-4",
+          "name": "Taylor Kim",
+          "department": "finance",
+          "role": "Informed",
+          "scoped_projects": [
+            "proj-1"
+          ],
+          "id": "stakeholder:s-4"
+        },
+        {
+          "type": "stakeholder",
+          "stakeholder_id": "s-5",
+          "name": "Casey Morgan",
+          "department": "operations",
+          "role": "Observer",
+          "scoped_projects": [
+            "proj-1"
+          ],
+          "id": "stakeholder:s-5"
+        },
+        {
+          "type": "stakeholder",
+          "stakeholder_id": "s-13",
+          "name": "Ava Brooks",
+          "department": "product",
+          "role": "Contributor",
+          "scoped_projects": [
+            "proj-1"
+          ],
+          "id": "stakeholder:s-13"
+        },
+        {
+          "type": "stakeholder",
+          "stakeholder_id": "s-14",
+          "name": "Noah Simmons",
+          "department": "product",
+          "role": "Contributor",
+          "scoped_projects": [
+            "proj-1"
+          ],
+          "id": "stakeholder:s-14"
+        },
+        {
+          "type": "stakeholder",
+          "stakeholder_id": "s-15",
+          "name": "Liam Foster",
+          "department": "product",
+          "role": "Informed",
+          "scoped_projects": [
+            "proj-1"
+          ],
+          "id": "stakeholder:s-15"
+        },
+        {
+          "type": "stakeholder",
+          "stakeholder_id": "s-16",
+          "name": "Emma Collins",
+          "department": "operations",
+          "role": "Affected",
+          "scoped_projects": [
+            "proj-1"
+          ],
+          "id": "stakeholder:s-16"
+        },
+        {
+          "type": "decision",
+          "decision_id": "dec-1",
+          "title": "Analytics Database Selection",
+          "created_at": "2026-02-08T02:26:50.538409+00:00",
+          "project_id": "proj-1",
+          "id": "decision:dec-1"
+        },
+        {
+          "type": "decision_version",
+          "version_id": "dec-1-v1",
+          "decision_id": "dec-1",
+          "content": "Use Postgres for analytics MVP",
+          "created_at": "2026-02-08T02:26:50.538454+00:00",
+          "confidence": 0.88,
+          "reasoning": "Fastest path for MVP delivery.",
+          "project_id": "proj-1",
+          "id": "decision_version:dec-1-v1"
+        },
+        {
+          "type": "decision_version",
+          "version_id": "dec-1-v2",
+          "decision_id": "dec-1",
+          "content": "Switch to BigQuery for scale needs",
+          "created_at": "2026-02-08T02:26:50.539716+00:00",
+          "confidence": 0.91,
+          "reasoning": "Load projections exceed Postgres comfort range.",
+          "project_id": "proj-1",
+          "id": "decision_version:dec-1-v2"
+        },
+        {
+          "type": "decision",
+          "decision_id": "dec-2",
+          "title": "Mobile vs Desktop Priority",
+          "created_at": "2026-02-08T02:26:50.540504+00:00",
+          "project_id": "proj-1",
+          "id": "decision:dec-2"
+        },
+        {
+          "type": "decision_version",
+          "version_id": "dec-2-v1",
+          "decision_id": "dec-2",
+          "content": "Prioritize mobile experience over desktop",
+          "created_at": "2026-02-08T02:26:50.540521+00:00",
+          "confidence": 0.86,
+          "reasoning": "Most usage now comes from mobile sessions.",
+          "project_id": "proj-1",
+          "id": "decision_version:dec-2-v1"
+        },
+        {
+          "type": "decision",
+          "decision_id": "dec-6",
+          "title": "API v2 Launch Timing",
+          "created_at": "2026-02-08T02:26:50.540576+00:00",
+          "project_id": "proj-1",
+          "id": "decision:dec-6"
+        },
+        {
+          "type": "decision_version",
+          "version_id": "dec-6-v1",
+          "decision_id": "dec-6",
+          "content": "Delay API v2 launch to Q2",
+          "created_at": "2026-02-08T02:26:50.540584+00:00",
+          "confidence": 0.83,
+          "reasoning": "Roadmap capacity constraints require focus on mobile delivery first.",
+          "project_id": "proj-1",
+          "id": "decision_version:dec-6-v1"
+        },
+        {
+          "type": "decision",
+          "decision_id": "dec-7",
+          "title": "SSO Requirement",
+          "created_at": "2026-02-08T02:26:50.541408+00:00",
+          "project_id": "proj-1",
+          "id": "decision:dec-7"
+        },
+        {
+          "type": "decision_version",
+          "version_id": "dec-7-v1",
+          "decision_id": "dec-7",
+          "content": "Implement SSO before public launch",
+          "created_at": "2026-02-08T02:26:50.541423+00:00",
+          "confidence": 0.9,
+          "reasoning": "Enterprise customers require SSO and auditability at launch.",
+          "project_id": "proj-1",
+          "id": "decision_version:dec-7-v1"
+        }
+      ],
+      "links": [
+        {
+          "type": "owns",
+          "source": "stakeholder:s-1",
+          "target": "decision:dec-1"
+        },
+        {
+          "type": "owns",
+          "source": "stakeholder:s-1",
+          "target": "decision:dec-2"
+        },
+        {
+          "type": "owns",
+          "source": "stakeholder:s-1",
+          "target": "decision:dec-6"
+        },
+        {
+          "type": "contributes",
+          "source": "stakeholder:s-2",
+          "target": "decision:dec-1"
+        },
+        {
+          "type": "contributes",
+          "source": "stakeholder:s-2",
+          "target": "decision:dec-2"
+        },
+        {
+          "type": "contributes",
+          "source": "stakeholder:s-2",
+          "target": "decision:dec-6"
+        },
+        {
+          "type": "contributes",
+          "source": "stakeholder:s-2",
+          "target": "decision:dec-7"
+        },
+        {
+          "type": "owns",
+          "source": "stakeholder:s-3",
+          "target": "decision:dec-1"
+        },
+        {
+          "type": "owns",
+          "source": "stakeholder:s-3",
+          "target": "decision:dec-7"
+        },
+        {
+          "type": "affected_by",
+          "source": "stakeholder:s-5",
+          "target": "decision_version:dec-2-v1"
+        },
+        {
+          "type": "affected_by",
+          "source": "stakeholder:s-5",
+          "target": "decision_version:dec-6-v1"
+        },
+        {
+          "type": "affected_by",
+          "source": "stakeholder:s-16",
+          "target": "decision_version:dec-7-v1"
+        },
+        {
+          "type": "has_version",
+          "source": "decision:dec-1",
+          "target": "decision_version:dec-1-v1"
+        },
+        {
+          "type": "has_version",
+          "source": "decision:dec-1",
+          "target": "decision_version:dec-1-v2"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-1-v1",
+          "target": "stakeholder:s-1"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-1-v1",
+          "target": "stakeholder:s-2"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-1-v1",
+          "target": "stakeholder:s-4"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-1-v1",
+          "target": "stakeholder:s-5"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-1-v1",
+          "target": "stakeholder:s-13"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-1-v1",
+          "target": "stakeholder:s-14"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-1-v1",
+          "target": "stakeholder:s-15"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-1-v1",
+          "target": "stakeholder:s-16"
+        },
+        {
+          "type": "supersedes",
+          "source": "decision_version:dec-1-v2",
+          "target": "decision_version:dec-1-v1"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-1-v2",
+          "target": "stakeholder:s-2"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-1-v2",
+          "target": "stakeholder:s-3"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-1-v2",
+          "target": "stakeholder:s-4"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-1-v2",
+          "target": "stakeholder:s-5"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-1-v2",
+          "target": "stakeholder:s-13"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-1-v2",
+          "target": "stakeholder:s-14"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-1-v2",
+          "target": "stakeholder:s-15"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-1-v2",
+          "target": "stakeholder:s-16"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-1-v2",
+          "target": "stakeholder:s-1"
+        },
+        {
+          "type": "has_version",
+          "source": "decision:dec-2",
+          "target": "decision_version:dec-2-v1"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-2-v1",
+          "target": "stakeholder:s-1"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-2-v1",
+          "target": "stakeholder:s-2"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-2-v1",
+          "target": "stakeholder:s-5"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-2-v1",
+          "target": "stakeholder:s-3"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-2-v1",
+          "target": "stakeholder:s-4"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-2-v1",
+          "target": "stakeholder:s-13"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-2-v1",
+          "target": "stakeholder:s-14"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-2-v1",
+          "target": "stakeholder:s-15"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-2-v1",
+          "target": "stakeholder:s-16"
+        },
+        {
+          "type": "has_version",
+          "source": "decision:dec-6",
+          "target": "decision_version:dec-6-v1"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-6-v1",
+          "target": "stakeholder:s-1"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-6-v1",
+          "target": "stakeholder:s-2"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-6-v1",
+          "target": "stakeholder:s-5"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-6-v1",
+          "target": "stakeholder:s-3"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-6-v1",
+          "target": "stakeholder:s-4"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-6-v1",
+          "target": "stakeholder:s-13"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-6-v1",
+          "target": "stakeholder:s-14"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-6-v1",
+          "target": "stakeholder:s-15"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-6-v1",
+          "target": "stakeholder:s-16"
+        },
+        {
+          "type": "has_version",
+          "source": "decision:dec-7",
+          "target": "decision_version:dec-7-v1"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-7-v1",
+          "target": "stakeholder:s-1"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-7-v1",
+          "target": "stakeholder:s-4"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-7-v1",
+          "target": "stakeholder:s-5"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-7-v1",
+          "target": "stakeholder:s-13"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-7-v1",
+          "target": "stakeholder:s-14"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-7-v1",
+          "target": "stakeholder:s-15"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-7-v1",
+          "target": "stakeholder:s-2"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-7-v1",
+          "target": "stakeholder:s-3"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-7-v1",
+          "target": "stakeholder:s-16"
+        }
+      ],
+      "edges": [
+        {
+          "type": "owns",
+          "source": "stakeholder:s-1",
+          "target": "decision:dec-1"
+        },
+        {
+          "type": "owns",
+          "source": "stakeholder:s-1",
+          "target": "decision:dec-2"
+        },
+        {
+          "type": "owns",
+          "source": "stakeholder:s-1",
+          "target": "decision:dec-6"
+        },
+        {
+          "type": "contributes",
+          "source": "stakeholder:s-2",
+          "target": "decision:dec-1"
+        },
+        {
+          "type": "contributes",
+          "source": "stakeholder:s-2",
+          "target": "decision:dec-2"
+        },
+        {
+          "type": "contributes",
+          "source": "stakeholder:s-2",
+          "target": "decision:dec-6"
+        },
+        {
+          "type": "contributes",
+          "source": "stakeholder:s-2",
+          "target": "decision:dec-7"
+        },
+        {
+          "type": "owns",
+          "source": "stakeholder:s-3",
+          "target": "decision:dec-1"
+        },
+        {
+          "type": "owns",
+          "source": "stakeholder:s-3",
+          "target": "decision:dec-7"
+        },
+        {
+          "type": "affected_by",
+          "source": "stakeholder:s-5",
+          "target": "decision_version:dec-2-v1"
+        },
+        {
+          "type": "affected_by",
+          "source": "stakeholder:s-5",
+          "target": "decision_version:dec-6-v1"
+        },
+        {
+          "type": "affected_by",
+          "source": "stakeholder:s-16",
+          "target": "decision_version:dec-7-v1"
+        },
+        {
+          "type": "has_version",
+          "source": "decision:dec-1",
+          "target": "decision_version:dec-1-v1"
+        },
+        {
+          "type": "has_version",
+          "source": "decision:dec-1",
+          "target": "decision_version:dec-1-v2"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-1-v1",
+          "target": "stakeholder:s-1"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-1-v1",
+          "target": "stakeholder:s-2"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-1-v1",
+          "target": "stakeholder:s-4"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-1-v1",
+          "target": "stakeholder:s-5"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-1-v1",
+          "target": "stakeholder:s-13"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-1-v1",
+          "target": "stakeholder:s-14"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-1-v1",
+          "target": "stakeholder:s-15"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-1-v1",
+          "target": "stakeholder:s-16"
+        },
+        {
+          "type": "supersedes",
+          "source": "decision_version:dec-1-v2",
+          "target": "decision_version:dec-1-v1"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-1-v2",
+          "target": "stakeholder:s-2"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-1-v2",
+          "target": "stakeholder:s-3"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-1-v2",
+          "target": "stakeholder:s-4"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-1-v2",
+          "target": "stakeholder:s-5"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-1-v2",
+          "target": "stakeholder:s-13"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-1-v2",
+          "target": "stakeholder:s-14"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-1-v2",
+          "target": "stakeholder:s-15"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-1-v2",
+          "target": "stakeholder:s-16"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-1-v2",
+          "target": "stakeholder:s-1"
+        },
+        {
+          "type": "has_version",
+          "source": "decision:dec-2",
+          "target": "decision_version:dec-2-v1"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-2-v1",
+          "target": "stakeholder:s-1"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-2-v1",
+          "target": "stakeholder:s-2"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-2-v1",
+          "target": "stakeholder:s-5"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-2-v1",
+          "target": "stakeholder:s-3"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-2-v1",
+          "target": "stakeholder:s-4"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-2-v1",
+          "target": "stakeholder:s-13"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-2-v1",
+          "target": "stakeholder:s-14"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-2-v1",
+          "target": "stakeholder:s-15"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-2-v1",
+          "target": "stakeholder:s-16"
+        },
+        {
+          "type": "has_version",
+          "source": "decision:dec-6",
+          "target": "decision_version:dec-6-v1"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-6-v1",
+          "target": "stakeholder:s-1"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-6-v1",
+          "target": "stakeholder:s-2"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-6-v1",
+          "target": "stakeholder:s-5"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-6-v1",
+          "target": "stakeholder:s-3"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-6-v1",
+          "target": "stakeholder:s-4"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-6-v1",
+          "target": "stakeholder:s-13"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-6-v1",
+          "target": "stakeholder:s-14"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-6-v1",
+          "target": "stakeholder:s-15"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-6-v1",
+          "target": "stakeholder:s-16"
+        },
+        {
+          "type": "has_version",
+          "source": "decision:dec-7",
+          "target": "decision_version:dec-7-v1"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-7-v1",
+          "target": "stakeholder:s-1"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-7-v1",
+          "target": "stakeholder:s-4"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-7-v1",
+          "target": "stakeholder:s-5"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-7-v1",
+          "target": "stakeholder:s-13"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-7-v1",
+          "target": "stakeholder:s-14"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-7-v1",
+          "target": "stakeholder:s-15"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-7-v1",
+          "target": "stakeholder:s-2"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-7-v1",
+          "target": "stakeholder:s-3"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-7-v1",
+          "target": "stakeholder:s-16"
+        }
+      ]
+    },
+    "proj-2": {
+      "nodes": [
+        {
+          "type": "stakeholder",
+          "stakeholder_id": "s-6",
+          "name": "Riley Park",
+          "department": "product",
+          "role": "Owner",
+          "scoped_projects": [
+            "proj-2"
+          ],
+          "id": "stakeholder:s-6"
+        },
+        {
+          "type": "stakeholder",
+          "stakeholder_id": "s-7",
+          "name": "Sam Patel",
+          "department": "engineering",
+          "role": "Contributor",
+          "scoped_projects": [
+            "proj-2"
+          ],
+          "id": "stakeholder:s-7"
+        },
+        {
+          "type": "stakeholder",
+          "stakeholder_id": "s-8",
+          "name": "Morgan West",
+          "department": "operations",
+          "role": "Affected",
+          "scoped_projects": [
+            "proj-2"
+          ],
+          "id": "stakeholder:s-8"
+        },
+        {
+          "type": "stakeholder",
+          "stakeholder_id": "s-9",
+          "name": "Jamie Quinn",
+          "department": "infrastructure",
+          "role": "Informed",
+          "scoped_projects": [
+            "proj-2"
+          ],
+          "id": "stakeholder:s-9"
+        },
+        {
+          "type": "decision",
+          "decision_id": "dec-3",
+          "title": "Authentication Approach",
+          "created_at": "2026-02-08T02:27:02.928218+00:00",
+          "project_id": "proj-2",
+          "id": "decision:dec-3"
+        },
+        {
+          "type": "decision_version",
+          "version_id": "dec-3-v1",
+          "decision_id": "dec-3",
+          "content": "Use existing auth service",
+          "created_at": "2026-02-08T02:27:02.928243+00:00",
+          "confidence": 0.93,
+          "reasoning": "Avoids rebuilding auth and keeps launch date intact.",
+          "project_id": "proj-2",
+          "id": "decision_version:dec-3-v1"
+        },
+        {
+          "type": "decision",
+          "decision_id": "dec-4",
+          "title": "Design System Adoption",
+          "created_at": "2026-02-08T02:27:02.929439+00:00",
+          "project_id": "proj-2",
+          "id": "decision:dec-4"
+        },
+        {
+          "type": "decision_version",
+          "version_id": "dec-4-v1",
+          "decision_id": "dec-4",
+          "content": "Adopt new design system for all customer-facing pages",
+          "created_at": "2026-02-08T02:27:02.929457+00:00",
+          "confidence": 0.88,
+          "reasoning": "Creates consistency, improves accessibility, and reduces long-term UI drift.",
+          "project_id": "proj-2",
+          "id": "decision_version:dec-4-v1"
+        }
+      ],
+      "links": [
+        {
+          "type": "owns",
+          "source": "stakeholder:s-6",
+          "target": "decision:dec-3"
+        },
+        {
+          "type": "owns",
+          "source": "stakeholder:s-6",
+          "target": "decision:dec-4"
+        },
+        {
+          "type": "contributes",
+          "source": "stakeholder:s-7",
+          "target": "decision:dec-3"
+        },
+        {
+          "type": "contributes",
+          "source": "stakeholder:s-7",
+          "target": "decision:dec-4"
+        },
+        {
+          "type": "affected_by",
+          "source": "stakeholder:s-8",
+          "target": "decision_version:dec-4-v1"
+        },
+        {
+          "type": "affected_by",
+          "source": "stakeholder:s-9",
+          "target": "decision_version:dec-3-v1"
+        },
+        {
+          "type": "has_version",
+          "source": "decision:dec-3",
+          "target": "decision_version:dec-3-v1"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-3-v1",
+          "target": "stakeholder:s-6"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-3-v1",
+          "target": "stakeholder:s-7"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-3-v1",
+          "target": "stakeholder:s-9"
+        },
+        {
+          "type": "has_version",
+          "source": "decision:dec-4",
+          "target": "decision_version:dec-4-v1"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-4-v1",
+          "target": "stakeholder:s-6"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-4-v1",
+          "target": "stakeholder:s-7"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-4-v1",
+          "target": "stakeholder:s-8"
+        }
+      ],
+      "edges": [
+        {
+          "type": "owns",
+          "source": "stakeholder:s-6",
+          "target": "decision:dec-3"
+        },
+        {
+          "type": "owns",
+          "source": "stakeholder:s-6",
+          "target": "decision:dec-4"
+        },
+        {
+          "type": "contributes",
+          "source": "stakeholder:s-7",
+          "target": "decision:dec-3"
+        },
+        {
+          "type": "contributes",
+          "source": "stakeholder:s-7",
+          "target": "decision:dec-4"
+        },
+        {
+          "type": "affected_by",
+          "source": "stakeholder:s-8",
+          "target": "decision_version:dec-4-v1"
+        },
+        {
+          "type": "affected_by",
+          "source": "stakeholder:s-9",
+          "target": "decision_version:dec-3-v1"
+        },
+        {
+          "type": "has_version",
+          "source": "decision:dec-3",
+          "target": "decision_version:dec-3-v1"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-3-v1",
+          "target": "stakeholder:s-6"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-3-v1",
+          "target": "stakeholder:s-7"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-3-v1",
+          "target": "stakeholder:s-9"
+        },
+        {
+          "type": "has_version",
+          "source": "decision:dec-4",
+          "target": "decision_version:dec-4-v1"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-4-v1",
+          "target": "stakeholder:s-6"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-4-v1",
+          "target": "stakeholder:s-7"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-4-v1",
+          "target": "stakeholder:s-8"
+        }
+      ]
+    },
+    "proj-3": {
+      "nodes": [
+        {
+          "type": "stakeholder",
+          "stakeholder_id": "s-10",
+          "name": "Priya Nair",
+          "department": "engineering",
+          "role": "Owner",
+          "scoped_projects": [
+            "proj-3"
+          ],
+          "id": "stakeholder:s-10"
+        },
+        {
+          "type": "stakeholder",
+          "stakeholder_id": "s-11",
+          "name": "Nina Das",
+          "department": "infrastructure",
+          "role": "Contributor",
+          "scoped_projects": [
+            "proj-3"
+          ],
+          "id": "stakeholder:s-11"
+        },
+        {
+          "type": "stakeholder",
+          "stakeholder_id": "s-12",
+          "name": "Arjun Rao",
+          "department": "operations",
+          "role": "Affected",
+          "scoped_projects": [
+            "proj-3"
+          ],
+          "id": "stakeholder:s-12"
+        },
+        {
+          "type": "decision",
+          "decision_id": "dec-5",
+          "title": "Monorepo Migration",
+          "created_at": "2026-02-08T02:27:02.930845+00:00",
+          "project_id": "proj-3",
+          "id": "decision:dec-5"
+        },
+        {
+          "type": "decision_version",
+          "version_id": "dec-5-v1",
+          "decision_id": "dec-5",
+          "content": "Migrate scripts to monorepo",
+          "created_at": "2026-02-08T02:27:02.930863+00:00",
+          "confidence": 0.85,
+          "reasoning": "Reduces duplication and simplifies CI maintenance.",
+          "project_id": "proj-3",
+          "id": "decision_version:dec-5-v1"
+        },
+        {
+          "type": "decision",
+          "decision_id": "dec-8",
+          "title": "CI Pipeline Standardization",
+          "created_at": "2026-02-08T02:27:02.931925+00:00",
+          "project_id": "proj-3",
+          "id": "decision:dec-8"
+        },
+        {
+          "type": "decision_version",
+          "version_id": "dec-8-v1",
+          "decision_id": "dec-8",
+          "content": "Standardize CI pipelines across teams",
+          "created_at": "2026-02-08T02:27:02.931940+00:00",
+          "confidence": 0.89,
+          "reasoning": "Improves delivery reliability and reduces maintenance overhead.",
+          "project_id": "proj-3",
+          "id": "decision_version:dec-8-v1"
+        }
+      ],
+      "links": [
+        {
+          "type": "owns",
+          "source": "stakeholder:s-10",
+          "target": "decision:dec-5"
+        },
+        {
+          "type": "owns",
+          "source": "stakeholder:s-10",
+          "target": "decision:dec-8"
+        },
+        {
+          "type": "contributes",
+          "source": "stakeholder:s-11",
+          "target": "decision:dec-5"
+        },
+        {
+          "type": "contributes",
+          "source": "stakeholder:s-11",
+          "target": "decision:dec-8"
+        },
+        {
+          "type": "affected_by",
+          "source": "stakeholder:s-12",
+          "target": "decision_version:dec-8-v1"
+        },
+        {
+          "type": "has_version",
+          "source": "decision:dec-5",
+          "target": "decision_version:dec-5-v1"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-5-v1",
+          "target": "stakeholder:s-10"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-5-v1",
+          "target": "stakeholder:s-11"
+        },
+        {
+          "type": "has_version",
+          "source": "decision:dec-8",
+          "target": "decision_version:dec-8-v1"
+        }
+      ],
+      "edges": [
+        {
+          "type": "owns",
+          "source": "stakeholder:s-10",
+          "target": "decision:dec-5"
+        },
+        {
+          "type": "owns",
+          "source": "stakeholder:s-10",
+          "target": "decision:dec-8"
+        },
+        {
+          "type": "contributes",
+          "source": "stakeholder:s-11",
+          "target": "decision:dec-5"
+        },
+        {
+          "type": "contributes",
+          "source": "stakeholder:s-11",
+          "target": "decision:dec-8"
+        },
+        {
+          "type": "affected_by",
+          "source": "stakeholder:s-12",
+          "target": "decision_version:dec-8-v1"
+        },
+        {
+          "type": "has_version",
+          "source": "decision:dec-5",
+          "target": "decision_version:dec-5-v1"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-5-v1",
+          "target": "stakeholder:s-10"
+        },
+        {
+          "type": "referenced_by",
+          "source": "decision_version:dec-5-v1",
+          "target": "stakeholder:s-11"
+        },
+        {
+          "type": "has_version",
+          "source": "decision:dec-8",
+          "target": "decision_version:dec-8-v1"
+        }
+      ]
+    }
+  },
+  "events": {
+    "proj-7": [
+      {
+        "event_type": "decision_version_stamped",
+        "timestamp": "2026-02-08T02:14:53.730030+00:00",
+        "payload": {
+          "decision_id": "dec-7",
+          "version_id": "v1",
+          "title": "Queue strategy",
+          "reasoning": "Decision update"
+        }
+      },
+      {
+        "event_type": "decision_version_stamped",
+        "timestamp": "2026-02-08T02:14:53.735233+00:00",
+        "payload": {
+          "decision_id": "dec-7",
+          "version_id": "v2",
+          "title": "Queue strategy",
+          "reasoning": "Decision update"
+        }
+      },
+      {
+        "event_type": "critic_review",
+        "timestamp": "2026-02-08T02:14:53.740872+00:00",
+        "payload": {
+          "conflict_count": 0
+        }
+      }
+    ],
+    "proj-1": [
+      {
+        "event_type": "meeting_processed",
+        "timestamp": "2026-02-08T02:26:50.538535+00:00",
+        "payload": {
+          "meeting_id": "m-1",
+          "title": "Analytics Planning",
+          "summary": "Initial analytics datastore discussion.",
+          "updated_decisions": [
+            {
+              "decision_id": "dec-1",
+              "version_id": "dec-1-v1"
+            }
+          ],
+          "source": "structured_input"
+        }
+      },
+      {
+        "event_type": "meeting_processed",
+        "timestamp": "2026-02-08T02:26:50.539771+00:00",
+        "payload": {
+          "meeting_id": "m-2",
+          "title": "Infra Review",
+          "summary": "Re-evaluated datastore for scale.",
+          "updated_decisions": [
+            {
+              "decision_id": "dec-1",
+              "version_id": "dec-1-v2"
+            }
+          ],
+          "source": "structured_input"
+        }
+      },
+      {
+        "event_type": "meeting_processed",
+        "timestamp": "2026-02-08T02:26:50.540620+00:00",
+        "payload": {
+          "meeting_id": "m-3",
+          "title": "Q1 Roadmap Sync",
+          "summary": "Platform prioritization update.",
+          "updated_decisions": [
+            {
+              "decision_id": "dec-2",
+              "version_id": "dec-2-v1"
+            },
+            {
+              "decision_id": "dec-6",
+              "version_id": "dec-6-v1"
+            }
+          ],
+          "source": "structured_input"
+        }
+      },
+      {
+        "event_type": "meeting_processed",
+        "timestamp": "2026-02-08T02:26:50.541468+00:00",
+        "payload": {
+          "meeting_id": "m-4",
+          "title": "Security Review",
+          "summary": "Security requirements for launch readiness.",
+          "updated_decisions": [
+            {
+              "decision_id": "dec-7",
+              "version_id": "dec-7-v1"
+            }
+          ],
+          "source": "structured_input"
+        }
+      },
+      {
+        "event_type": "meeting_processed",
+        "timestamp": "2026-02-08T02:27:02.922794+00:00",
+        "payload": {
+          "meeting_id": "m-1",
+          "title": "Analytics Planning",
+          "summary": "Initial analytics datastore discussion.",
+          "updated_decisions": [
+            {
+              "decision_id": "dec-1",
+              "version_id": "dec-1-v1"
+            }
+          ],
+          "source": "structured_input"
+        }
+      },
+      {
+        "event_type": "meeting_processed",
+        "timestamp": "2026-02-08T02:27:02.924016+00:00",
+        "payload": {
+          "meeting_id": "m-2",
+          "title": "Infra Review",
+          "summary": "Re-evaluated datastore for scale.",
+          "updated_decisions": [
+            {
+              "decision_id": "dec-1",
+              "version_id": "dec-1-v2"
+            }
+          ],
+          "source": "structured_input"
+        }
+      },
+      {
+        "event_type": "meeting_processed",
+        "timestamp": "2026-02-08T02:27:02.924979+00:00",
+        "payload": {
+          "meeting_id": "m-3",
+          "title": "Q1 Roadmap Sync",
+          "summary": "Platform prioritization update.",
+          "updated_decisions": [
+            {
+              "decision_id": "dec-2",
+              "version_id": "dec-2-v1"
+            },
+            {
+              "decision_id": "dec-6",
+              "version_id": "dec-6-v1"
+            }
+          ],
+          "source": "structured_input"
+        }
+      },
+      {
+        "event_type": "meeting_processed",
+        "timestamp": "2026-02-08T02:27:02.925955+00:00",
+        "payload": {
+          "meeting_id": "m-4",
+          "title": "Security Review",
+          "summary": "Security requirements for launch readiness.",
+          "updated_decisions": [
+            {
+              "decision_id": "dec-7",
+              "version_id": "dec-7-v1"
+            }
+          ],
+          "source": "structured_input"
+        }
+      }
+    ],
+    "proj-2": [
+      {
+        "event_type": "meeting_processed",
+        "timestamp": "2026-02-08T02:27:02.928312+00:00",
+        "payload": {
+          "meeting_id": "m-5",
+          "title": "Portal Kickoff",
+          "summary": "Kickoff architecture agreements.",
+          "updated_decisions": [
+            {
+              "decision_id": "dec-3",
+              "version_id": "dec-3-v1"
+            }
+          ],
+          "source": "structured_input"
+        }
+      },
+      {
+        "event_type": "meeting_processed",
+        "timestamp": "2026-02-08T02:27:02.929505+00:00",
+        "payload": {
+          "meeting_id": "m-6",
+          "title": "UX Review",
+          "summary": "Standardized UI direction for customer-facing screens.",
+          "updated_decisions": [
+            {
+              "decision_id": "dec-4",
+              "version_id": "dec-4-v1"
+            }
+          ],
+          "source": "structured_input"
+        }
+      }
+    ],
+    "proj-3": [
+      {
+        "event_type": "meeting_processed",
+        "timestamp": "2026-02-08T02:27:02.930900+00:00",
+        "payload": {
+          "meeting_id": "m-7",
+          "title": "Tooling Standup",
+          "summary": "Consolidation decision for tooling repos.",
+          "updated_decisions": [
+            {
+              "decision_id": "dec-5",
+              "version_id": "dec-5-v1"
+            }
+          ],
+          "source": "structured_input"
+        }
+      },
+      {
+        "event_type": "meeting_processed",
+        "timestamp": "2026-02-08T02:27:02.931993+00:00",
+        "payload": {
+          "meeting_id": "m-8",
+          "title": "DevOps Sync",
+          "summary": "Agreed to standardize delivery workflows across teams.",
+          "updated_decisions": [
+            {
+              "decision_id": "dec-8",
+              "version_id": "dec-8-v1"
+            }
+          ],
+          "source": "structured_input"
+        }
+      }
+    ]
+  }
+}

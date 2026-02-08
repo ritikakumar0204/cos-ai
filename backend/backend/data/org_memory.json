@@ -1,0 +1,165 @@
+{
+  "graphs": {
+    "proj-1": {
+      "nodes": [
+        {
+          "type": "stakeholder",
+          "stakeholder_id": "s-1",
+          "name": "Maya Chen",
+          "department": "product",
+          "role": "Owner",
+          "scoped_projects": [
+            "proj-1"
+          ],
+          "id": "stakeholder:s-1"
+        },
+        {
+          "type": "stakeholder",
+          "stakeholder_id": "s-2",
+          "name": "Jordan Lee",
+          "department": "engineering",
+          "role": "Contributor",
+          "scoped_projects": [
+            "proj-1"
+          ],
+          "id": "stakeholder:s-2"
+        },
+        {
+          "type": "stakeholder",
+          "stakeholder_id": "s-3",
+          "name": "Alex Rivera",
+          "department": "infrastructure",
+          "role": "Affected",
+          "scoped_projects": [
+            "proj-1"
+          ],
+          "id": "stakeholder:s-3"
+        },
+        {
+          "type": "stakeholder",
+          "stakeholder_id": "s-4",
+          "name": "Taylor Kim",
+          "department": "finance",
+          "role": "Informed",
+          "scoped_projects": [
+            "proj-1"
+          ],
+          "id": "stakeholder:s-4"
+        },
+        {
+          "type": "stakeholder",
+          "stakeholder_id": "s-5",
+          "name": "Casey Morgan",
+          "department": "operations",
+          "role": "Observer",
+          "scoped_projects": [
+            "proj-1"
+          ],
+          "id": "stakeholder:s-5"
+        },
+        {
+          "type": "stakeholder",
+          "stakeholder_id": "s-13",
+          "name": "Ava Brooks",
+          "department": "product",
+          "role": "Contributor",
+          "scoped_projects": [
+            "proj-1"
+          ],
+          "id": "stakeholder:s-13"
+        },
+        {
+          "type": "stakeholder",
+          "stakeholder_id": "s-14",
+          "name": "Noah Simmons",
+          "department": "product",
+          "role": "Contributor",
+          "scoped_projects": [
+            "proj-1"
+          ],
+          "id": "stakeholder:s-14"
+        },
+        {
+          "type": "stakeholder",
+          "stakeholder_id": "s-15",
+          "name": "Liam Foster",
+          "department": "product",
+          "role": "Informed",
+          "scoped_projects": [
+            "proj-1"
+          ],
+          "id": "stakeholder:s-15"
+        },
+        {
+          "type": "stakeholder",
+          "stakeholder_id": "s-16",
+          "name": "Emma Collins",
+          "department": "operations",
+          "role": "Affected",
+          "scoped_projects": [
+            "proj-1"
+          ],
+          "id": "stakeholder:s-16"
+        }
+      ],
+      "links": [],
+      "edges": []
+    },
+    "proj-2": {
+      "nodes": [
+        {
+          "type": "stakeholder",
+          "stakeholder_id": "s-6",
+          "name": "Riley Park",
+          "department": "product",
+          "role": "Owner",
+          "scoped_projects": [
+            "proj-2"
+          ],
+          "id": "stakeholder:s-6"
+        },
+        {
+          "type": "stakeholder",
+          "stakeholder_id": "s-7",
+          "name": "Sam Patel",
+          "department": "engineering",
+          "role": "Contributor",
+          "scoped_projects": [
+            "proj-2"
+          ],
+          "id": "stakeholder:s-7"
+        },
+        {
+          "type": "stakeholder",
+          "stakeholder_id": "s-8",
+          "name": "Morgan West",
+          "department": "operations",
+          "role": "Affected",
+          "scoped_projects": [
+            "proj-2"
+          ],
+          "id": "stakeholder:s-8"
+        },
+        {
+          "type": "stakeholder",
+          "stakeholder_id": "s-9",
+          "name": "Jamie Quinn",
+          "department": "infrastructure",
+          "role": "Informed",
+          "scoped_projects": [
+            "proj-2"
+          ],
+          "id": "stakeholder:s-9"
+        }
+      ],
+      "links": [],
+      "edges": []
+    },
+    "proj-3": {
+      "nodes": [],
+      "links": [],
+      "edges": []
+    }
+  },
+  "events": {}
+}

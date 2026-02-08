@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;700;800&family=Space+Grotesk:wght@500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Decision Drift Detector Design System
+   Executive-friendly, calm, focused on understanding
+   All colors in HSL format
+*/
+
+@layer base {
+  :root {
+    /* Core palette - muted slate foundation */
+    --background: 210 20% 98%;
+    --foreground: 220 25% 10%;
+
+    /* Card surfaces */
+    --card: 0 0% 100%;
+    --card-foreground: 220 25% 10%;
+
+    /* Popover */
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 25% 10%;
+
+    /* Primary - deep slate blue */
+    --primary: 220 30% 20%;
+    --primary-foreground: 210 20% 98%;
+
+    /* Secondary - soft gray */
+    --secondary: 215 20% 94%;
+    --secondary-foreground: 220 25% 25%;
+
+    /* Muted elements */
+    --muted: 215 20% 94%;
+    --muted-foreground: 215 15% 50%;
+
+    /* Accent - subtle teal for highlights */
+    --accent: 180 30% 94%;
+    --accent-foreground: 180 40% 25%;
+
+    /* Status colors */
+    --destructive: 0 50% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Alignment status */
+    --aligned: 160 40% 45%;
+    --aligned-foreground: 160 40% 98%;
+    --aligned-bg: 160 40% 95%;
+    
+    --drift: 15 60% 55%;
+    --drift-foreground: 15 60% 98%;
+    --drift-bg: 15 50% 96%;
+
+    /* Timeline */
+    --timeline-line: 215 20% 85%;
+    --timeline-node: 220 30% 20%;
+    --timeline-node-latest: 180 45% 45%;
+
+    /* Borders and inputs */
+    --border: 215 25% 90%;
+    --input: 215 25% 90%;
+    --ring: 220 30% 20%;
+
+    --radius: 0.625rem;
+
+    /* Sidebar */
+    --sidebar-background: 220 25% 12%;
+    --sidebar-foreground: 215 20% 85%;
+    --sidebar-primary: 180 45% 55%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 25% 18%;
+    --sidebar-accent-foreground: 215 20% 95%;
+    --sidebar-border: 220 20% 20%;
+    --sidebar-ring: 180 45% 55%;
+  }
+
+  .dark {
+    --background: 220 25% 8%;
+    --foreground: 210 20% 95%;
+
+    --card: 220 25% 12%;
+    --card-foreground: 210 20% 95%;
+
+    --popover: 220 25% 12%;
+    --popover-foreground: 210 20% 95%;
+
+    --primary: 210 20% 95%;
+    --primary-foreground: 220 25% 12%;
+
+    --secondary: 220 20% 18%;
+    --secondary-foreground: 210 20% 90%;
+
+    --muted: 220 20% 18%;
+    --muted-foreground: 215 15% 60%;
+
+    --accent: 180 25% 18%;
+    --accent-foreground: 180 35% 80%;
+
+    --destructive: 0 50% 45%;
+    --destructive-foreground: 0 0% 100%;
+
+    --aligned: 160 35% 40%;
+    --aligned-bg: 160 30% 15%;
+    
+    --drift: 15 50% 50%;
+    --drift-bg: 15 40% 15%;
+
+    --timeline-line: 220 20% 25%;
+    --timeline-node: 210 20% 70%;
+    --timeline-node-latest: 180 40% 50%;
+
+    --border: 220 20% 20%;
+    --input: 220 20% 20%;
+    --ring: 180 40% 50%;
+
+    --sidebar-background: 220 25% 6%;
+    --sidebar-foreground: 215 20% 85%;
+    --sidebar-primary: 180 45% 55%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 25% 12%;
+    --sidebar-accent-foreground: 215 20% 95%;
+    --sidebar-border: 220 20% 15%;
+    --sidebar-ring: 180 45% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .hero-grid {
+    background-image:
+      linear-gradient(rgba(110, 175, 255, 0.11) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(110, 175, 255, 0.11) 1px, transparent 1px);
+    background-size: 42px 42px;
+    mask-image: radial-gradient(circle at center, black 40%, transparent 90%);
+  }
+
+  .glass-panel {
+    @apply rounded-2xl border border-blue-200/20 bg-blue-200/10 p-5 backdrop-blur-xl;
+    box-shadow: 0 14px 42px rgba(10, 24, 51, 0.35), inset 0 0 0 1px rgba(255, 255, 255, 0.03);
+  }
+
+  .animate-reveal-up {
+    animation: reveal-up 700ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+  }
+
+  .animate-float-slow {
+    animation: float-slow 12s ease-in-out infinite;
+  }
+
+  .animate-float-reverse {
+    animation: float-reverse 14s ease-in-out infinite;
+  }
+
+  @keyframes reveal-up {
+    from {
+      transform: translateY(16px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes float-slow {
+    0%,
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+    50% {
+      transform: translate3d(24px, 14px, 0);
+    }
+  }
+
+  @keyframes float-reverse {
+    0%,
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+    50% {
+      transform: translate3d(-18px, -12px, 0);
+    }
+  }
+}

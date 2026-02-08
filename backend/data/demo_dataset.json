@@ -1,0 +1,217 @@
+{
+  "projects": [
+    {"project_id": "proj-1", "project_name": "Analytics Platform"},
+    {"project_id": "proj-2", "project_name": "Customer Portal"},
+    {"project_id": "proj-3", "project_name": "Internal Tools"}
+  ],
+  "project_stakeholders": {
+    "proj-1": [
+      {"stakeholder_id": "s-1", "name": "Maya Chen", "department": "product", "role": "Owner"},
+      {"stakeholder_id": "s-2", "name": "Jordan Lee", "department": "engineering", "role": "Contributor"},
+      {"stakeholder_id": "s-3", "name": "Alex Rivera", "department": "infrastructure", "role": "Affected"},
+      {"stakeholder_id": "s-4", "name": "Taylor Kim", "department": "finance", "role": "Informed"},
+      {"stakeholder_id": "s-5", "name": "Casey Morgan", "department": "operations", "role": "Observer"},
+      {"stakeholder_id": "s-13", "name": "Ava Brooks", "department": "product", "role": "Contributor"},
+      {"stakeholder_id": "s-14", "name": "Noah Simmons", "department": "product", "role": "Contributor"},
+      {"stakeholder_id": "s-15", "name": "Liam Foster", "department": "product", "role": "Informed"},
+      {"stakeholder_id": "s-16", "name": "Emma Collins", "department": "operations", "role": "Affected"}
+    ],
+    "proj-2": [
+      {"stakeholder_id": "s-6", "name": "Riley Park", "department": "product", "role": "Owner"},
+      {"stakeholder_id": "s-7", "name": "Sam Patel", "department": "engineering", "role": "Contributor"},
+      {"stakeholder_id": "s-8", "name": "Morgan West", "department": "operations", "role": "Affected"},
+      {"stakeholder_id": "s-9", "name": "Jamie Quinn", "department": "infrastructure", "role": "Informed"}
+    ],
+    "proj-3": [
+      {"stakeholder_id": "s-10", "name": "Priya Nair", "department": "engineering", "role": "Owner"},
+      {"stakeholder_id": "s-11", "name": "Nina Das", "department": "infrastructure", "role": "Contributor"},
+      {"stakeholder_id": "s-12", "name": "Arjun Rao", "department": "operations", "role": "Affected"}
+    ]
+  },
+  "manager_reports": {
+    "proj-1": {
+      "s-1": ["s-4", "s-5", "s-13", "s-14", "s-15", "s-16"]
+    }
+  },
+  "meeting_catalog": {
+    "proj-1": [
+      {
+        "meeting_id": "m-1",
+        "title": "Analytics Planning",
+        "timestamp": "2026-02-10T10:00:00Z",
+        "summary": "Initial analytics datastore discussion.",
+        "participants": [
+          {"stakeholder_id": "s-1", "name": "Maya Chen", "department": "product", "role": "Owner"},
+          {"stakeholder_id": "s-2", "name": "Jordan Lee", "department": "engineering", "role": "Contributor"}
+        ],
+        "decisions": [
+          {
+            "decision_id": "dec-1",
+            "title": "Analytics Database Selection",
+            "version_id": "dec-1-v1",
+            "content": "Use Postgres for analytics MVP",
+            "confidence": 0.88,
+            "reasoning": "Fastest path for MVP delivery."
+          }
+        ]
+      },
+      {
+        "meeting_id": "m-2",
+        "title": "Infra Review",
+        "timestamp": "2026-02-11T15:30:00Z",
+        "summary": "Re-evaluated datastore for scale.",
+        "participants": [
+          {"stakeholder_id": "s-2", "name": "Jordan Lee", "department": "engineering", "role": "Contributor"},
+          {"stakeholder_id": "s-3", "name": "Alex Rivera", "department": "infrastructure", "role": "Owner"}
+        ],
+        "decisions": [
+          {
+            "decision_id": "dec-1",
+            "title": "Analytics Database Selection",
+            "version_id": "dec-1-v2",
+            "content": "Switch to BigQuery for scale needs",
+            "confidence": 0.91,
+            "reasoning": "Load projections exceed Postgres comfort range."
+          }
+        ]
+      },
+      {
+        "meeting_id": "m-3",
+        "title": "Q1 Roadmap Sync",
+        "timestamp": "2026-02-12T11:00:00Z",
+        "summary": "Platform prioritization update.",
+        "participants": [
+          {"stakeholder_id": "s-1", "name": "Maya Chen", "department": "product", "role": "Owner"},
+          {"stakeholder_id": "s-2", "name": "Jordan Lee", "department": "engineering", "role": "Contributor"},
+          {"stakeholder_id": "s-5", "name": "Casey Morgan", "department": "operations", "role": "Affected"}
+        ],
+        "decisions": [
+          {
+            "decision_id": "dec-2",
+            "title": "Mobile vs Desktop Priority",
+            "version_id": "dec-2-v1",
+            "content": "Prioritize mobile experience over desktop",
+            "confidence": 0.86,
+            "reasoning": "Most usage now comes from mobile sessions."
+          },
+          {
+            "decision_id": "dec-6",
+            "title": "API v2 Launch Timing",
+            "version_id": "dec-6-v1",
+            "content": "Delay API v2 launch to Q2",
+            "confidence": 0.83,
+            "reasoning": "Roadmap capacity constraints require focus on mobile delivery first."
+          }
+        ]
+      },
+      {
+        "meeting_id": "m-4",
+        "title": "Security Review",
+        "timestamp": "2026-02-14T13:15:00Z",
+        "summary": "Security requirements for launch readiness.",
+        "participants": [
+          {"stakeholder_id": "s-2", "name": "Jordan Lee", "department": "engineering", "role": "Contributor"},
+          {"stakeholder_id": "s-3", "name": "Alex Rivera", "department": "infrastructure", "role": "Owner"},
+          {"stakeholder_id": "s-16", "name": "Emma Collins", "department": "operations", "role": "Affected"}
+        ],
+        "decisions": [
+          {
+            "decision_id": "dec-7",
+            "title": "SSO Requirement",
+            "version_id": "dec-7-v1",
+            "content": "Implement SSO before public launch",
+            "confidence": 0.9,
+            "reasoning": "Enterprise customers require SSO and auditability at launch."
+          }
+        ]
+      }
+    ],
+    "proj-2": [
+      {
+        "meeting_id": "m-5",
+        "title": "Portal Kickoff",
+        "timestamp": "2026-02-08T10:00:00Z",
+        "summary": "Kickoff architecture agreements.",
+        "participants": [
+          {"stakeholder_id": "s-6", "name": "Riley Park", "department": "product", "role": "Owner"},
+          {"stakeholder_id": "s-7", "name": "Sam Patel", "department": "engineering", "role": "Contributor"},
+          {"stakeholder_id": "s-9", "name": "Jamie Quinn", "department": "infrastructure", "role": "Affected"}
+        ],
+        "decisions": [
+          {
+            "decision_id": "dec-3",
+            "title": "Authentication Approach",
+            "version_id": "dec-3-v1",
+            "content": "Use existing auth service",
+            "confidence": 0.93,
+            "reasoning": "Avoids rebuilding auth and keeps launch date intact."
+          }
+        ]
+      },
+      {
+        "meeting_id": "m-6",
+        "title": "UX Review",
+        "timestamp": "2026-02-13T16:00:00Z",
+        "summary": "Standardized UI direction for customer-facing screens.",
+        "participants": [
+          {"stakeholder_id": "s-6", "name": "Riley Park", "department": "product", "role": "Owner"},
+          {"stakeholder_id": "s-7", "name": "Sam Patel", "department": "engineering", "role": "Contributor"},
+          {"stakeholder_id": "s-8", "name": "Morgan West", "department": "operations", "role": "Affected"}
+        ],
+        "decisions": [
+          {
+            "decision_id": "dec-4",
+            "title": "Design System Adoption",
+            "version_id": "dec-4-v1",
+            "content": "Adopt new design system for all customer-facing pages",
+            "confidence": 0.88,
+            "reasoning": "Creates consistency, improves accessibility, and reduces long-term UI drift."
+          }
+        ]
+      }
+    ],
+    "proj-3": [
+      {
+        "meeting_id": "m-7",
+        "title": "Tooling Standup",
+        "timestamp": "2026-02-09T11:00:00Z",
+        "summary": "Consolidation decision for tooling repos.",
+        "participants": [
+          {"stakeholder_id": "s-10", "name": "Priya Nair", "department": "engineering", "role": "Owner"},
+          {"stakeholder_id": "s-11", "name": "Nina Das", "department": "infrastructure", "role": "Contributor"}
+        ],
+        "decisions": [
+          {
+            "decision_id": "dec-5",
+            "title": "Monorepo Migration",
+            "version_id": "dec-5-v1",
+            "content": "Migrate scripts to monorepo",
+            "confidence": 0.85,
+            "reasoning": "Reduces duplication and simplifies CI maintenance."
+          }
+        ]
+      },
+      {
+        "meeting_id": "m-8",
+        "title": "DevOps Sync",
+        "timestamp": "2026-02-15T14:30:00Z",
+        "summary": "Agreed to standardize delivery workflows across teams.",
+        "participants": [
+          {"stakeholder_id": "s-10", "name": "Priya Nair", "department": "engineering", "role": "Owner"},
+          {"stakeholder_id": "s-11", "name": "Nina Das", "department": "infrastructure", "role": "Contributor"},
+          {"stakeholder_id": "s-12", "name": "Arjun Rao", "department": "operations", "role": "Affected"}
+        ],
+        "decisions": [
+          {
+            "decision_id": "dec-8",
+            "title": "CI Pipeline Standardization",
+            "version_id": "dec-8-v1",
+            "content": "Standardize CI pipelines across teams",
+            "confidence": 0.89,
+            "reasoning": "Improves delivery reliability and reduces maintenance overhead."
+          }
+        ]
+      }
+    ]
+  }
+}
